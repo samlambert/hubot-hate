@@ -1,16 +1,12 @@
-# Description:
-#   When Hubot hears the word hate, he *might* post a reply ;)
-#
-# Dependencies:
-#   None
-#
-# Configuration:
-#   None
-#
-# Author:
-#   Sam Lambert
+fs = require 'fs'
+path = require 'path'
 
-module.exports = (robot) ->
-  robot.hear /hate/i, (msg) ->
-    if Math.random() < 0.01
-      msg.send 'http://i.imgur.com/A3YuiZ0.jpg'
+module.exports = (robot, scripts) ->
+  scriptsPath = path.resolve(__dirname, 'src')
+  fs.exists scriptsPath, (exists) ->
+    if exists
+      for script in fs.readdirSync(scriptsPath)
+        if scripts? and '*' not in scripts
+          robot.loadFile(scriptsPath, script) if script in scripts
+        else
+          robot.loadFile(scriptsPath, script)
