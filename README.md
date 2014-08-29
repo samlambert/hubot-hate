@@ -9,7 +9,7 @@ Add **hubot-hate** to your `package.json` file:
 
 ```json
 "dependencies": {
-  "hubot-hate": ">= 0.0.01",
+  "hubot-hate": ">= 0.0.1",
 }
 ```
 
