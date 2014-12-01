@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/opt/boxen/nodenv/versions/v0.10/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   'hubot-hate' ]
+2 info using npm@2.1.10
+3 info using node@v0.10.21
+4 verbose node symlink /opt/boxen/nodenv/versions/v0.10/bin/node
+5 verbose publish [ 'hubot-hate' ]
+6 silly cache add args [ 'hubot-hate', null ]
+7 verbose cache add spec hubot-hate
+8 silly cache add parsed spec { raw: 'hubot-hate',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'hubot-hate',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed hubot-hate@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'hubot-hate', range: '*', hasData: false }
+13 silly mapToRegistry name hubot-hate
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/hubot-hate
+17 verbose addNameRange registry:https://registry.npmjs.org/hubot-hate not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/hubot-hate
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 17:49:08
+21 verbose request id 8dc21894d60aabf9
+22 http request GET https://registry.npmjs.org/hubot-hate
+23 http 200 https://registry.npmjs.org/hubot-hate
+24 silly get cb [ 200,
+24 silly get   { date: 'Mon, 01 Dec 2014 17:49:10 GMT',
+24 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"BZC53654JR485486AHT4MJTV3"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '3107',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     'x-served-by': 'cache-lcy1124-LCY',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1417456150.079369,VS0,VE641',
+24 silly get     vary: 'Accept',
+24 silly get     'keep-alive': 'timeout=10, max=50',
+24 silly get     connection: 'Keep-Alive' } ]
+25 silly addNameRange number 2 { name: 'hubot-hate', range: '*', hasData: true }
+26 silly addNameRange versions [ 'hubot-hate', [ '0.0.1', '0.0.2' ] ]
+27 verbose addNamed hubot-hate@0.0.2
+28 silly addNamed semver.valid 0.0.2
+29 silly addNamed semver.validRange 0.0.2
+30 silly cache afterAdd hubot-hate@0.0.2
+31 verbose afterAdd /Users/samlambert/.npm/hubot-hate/0.0.2/package/package.json not in flight; writing
+32 verbose afterAdd /Users/samlambert/.npm/hubot-hate/0.0.2/package/package.json written
+33 silly publish { name: 'hubot-hate',
+33 silly publish   version: '0.0.2',
+33 silly publish   description: 'Maybe you should hustle as hard as you hate?',
+33 silly publish   main: 'index.coffee',
+33 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+33 silly publish   repository:
+33 silly publish    { type: 'git',
+33 silly publish      url: 'git://github.com/samlambert/hubot-hate.git' },
+33 silly publish   keywords: [ 'Hubot', 'Hate' ],
+33 silly publish   author: { name: 'https://twitter.com/isamlambert' },
+33 silly publish   license: 'MIT',
+33 silly publish   bugs: { url: 'https://github.com/samlambert/hubot-hate/issues' },
+33 silly publish   readme: 'hubot-hate\n==========\n\nThis script helps quell the hate by asking the age old question: "Maybe you should hustle as hard as you hate?"\n\n## Installation\n\nAdd **hubot-hate** to your `package.json` file:\n\n```json\n"dependencies": {\n  "hubot-hate": ">= 0.0.1",\n}\n```\n\nAdd **hubot-hate** to your `external-scripts.json`:\n\n```json\n["hubot-hate"]\n```\n\nRun `npm install`\n',
+33 silly publish   readmeFilename: 'README.md',
+33 silly publish   homepage: 'https://github.com/samlambert/hubot-hate',
+33 silly publish   _id: 'hubot-hate@0.0.2',
+33 silly publish   _from: 'hubot-hate@*' }
+34 info prepublish hubot-hate@0.0.2
+35 silly mapToRegistry name hubot-hate
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry uri https://registry.npmjs.org/hubot-hate
+39 verbose publish registryBase https://registry.npmjs.org/
+40 silly publish uploading /Users/samlambert/.npm/hubot-hate/0.0.2/package.tgz
+41 verbose request uri https://registry.npmjs.org/hubot-hate
+42 verbose request sending authorization for write operation
+43 info attempt registry request try #1 at 17:49:09
+44 http request PUT https://registry.npmjs.org/hubot-hate
+45 http 403 https://registry.npmjs.org/hubot-hate
+46 verbose headers { date: 'Mon, 01 Dec 2014 17:49:11 GMT',
+46 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+46 verbose headers   'content-type': 'application/json',
+46 verbose headers   'cache-control': 'max-age=60',
+46 verbose headers   'content-length': '2618',
+46 verbose headers   'accept-ranges': 'bytes',
+46 verbose headers   via: '1.1 varnish',
+46 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+46 verbose headers   'x-cache': 'MISS',
+46 verbose headers   'x-cache-hits': '0',
+46 verbose headers   'x-timer': 'S1417456150.940428,VS0,VE619',
+46 verbose headers   'keep-alive': 'timeout=10, max=50',
+46 verbose headers   connection: 'Keep-Alive' }
+47 verbose request invalidating /Users/samlambert/.npm/registry.npmjs.org/hubot-hate on PUT
+48 error publish Failed PUT 403
+49 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.2
+49 verbose stack old={"name":"hubot-hate","version":"0.0.2","description":"Maybe you should hustle as hard as you hate?","main":"index.coffee","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"git://github.com/samlambert/hubot-hate.git"},"keywords":["Hubot","Hate"],"author":{"name":"https://twitter.com/isamlambert"},"license":"MIT","bugs":{"url":"https://github.com/samlambert/hubot-hate/issues"},"gitHead":"c66090160774e88f49253d8cc612044bf375042a","homepage":"https://github.com/samlambert/hubot-hate","_id":"hubot-hate@0.0.2","_shasum":"14ad896750c1dd655ceb3f596c471f79fd8dccc0","_from":".","_npmVersion":"2.0.0-beta.0","_npmUser":{"name":"samlambert","email":"sam@github.com"},"maintainers":[{"name":"samlambert","email":"sam@github.com"}],"dist":{"shasum":"14ad896750c1dd655ceb3f596c471f79fd8dccc0","tarball":"http://registry.npmjs.org/hubot-hate/-/hubot-hate-0.0.2.tgz"}}
+49 verbose stack new={"name":"hubot-hate","version":"0.0.2","description":"Maybe you should hustle as hard as you hate?","main":"index.coffee","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"git://github.com/samlambert/hubot-hate.git"},"keywords":["Hubot","Hate"],"author":{"name":"https://twitter.com/isamlambert"},"license":"MIT","bugs":{"url":"https://github.com/samlambert/hubot-hate/issues"},"readme":"hubot-hate\u000a==========\u000a\u000aThis script helps quell the hate by asking the age old question: \"Maybe you should hustle as hard as you hate?\"\u000a\u000a## Installation\u000a\u000aAdd **hubot-hate** to your `package.json` file:\u000a\u000a```json\u000a\"dependencies\": {\u000a  \"hubot-hate\": \">= 0.0.1\",\u000a}\u000a```\u000a\u000aAdd **hubot-hate** to your `external-scripts.json`:\u000a\u000a```json\u000a[\"hubot-hate\"]\u000a```\u000a\u000aRun `npm install`\u000a","readmeFilename":"README.md","homepage":"https://github.com/samlambert/hubot-hate","_id":"hubot-hate@0.0.2","_from":"hubot-hate@*","_npmVersion":"2.1.10","_nodeVersion":"0.10.21","_npmUser":{"name":"samlambert","email":"sam@github.com"},"maintainers":[{"name":"samlambert","email":"sam@github.com"}],"dist":{"shasum":"ab0d6d4f6e7548445928830218c46909be443dd9","tarball":"http://registry.npmjs.org/hubot-hate/-/hubot-hate-0.0.2.tgz"}}: hubot-hate
+49 verbose stack     at CachingRegistryClient.<anonymous> (/opt/boxen/nodenv/versions/v0.10.21/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:234:14)
+49 verbose stack     at Request._callback (/opt/boxen/nodenv/versions/v0.10.21/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+49 verbose stack     at Request.self.callback (/opt/boxen/nodenv/versions/v0.10.21/lib/node_modules/npm/node_modules/request/request.js:372:22)
+49 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+49 verbose stack     at Request.<anonymous> (/opt/boxen/nodenv/versions/v0.10.21/lib/node_modules/npm/node_modules/request/request.js:1317:14)
+49 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+49 verbose stack     at IncomingMessage.<anonymous> (/opt/boxen/nodenv/versions/v0.10.21/lib/node_modules/npm/node_modules/request/request.js:1265:12)
+49 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+49 verbose stack     at _stream_readable.js:920:16
+49 verbose stack     at process._tickCallback (node.js:415:13)
+50 verbose statusCode 403
+51 verbose pkgid hubot-hate
+52 verbose cwd /Users/samlambert/github/hubot-hate
+53 error Darwin 14.0.0
+54 error argv "node" "/opt/boxen/nodenv/versions/v0.10/bin/npm" "publish" "hubot-hate"
+55 error node v0.10.21
+56 error npm  v2.1.10
+57 error code E403
+58 error forbidden cannot modify pre-existing version: 0.0.2
+58 error old={"name":"hubot-hate","version":"0.0.2","description":"Maybe you should hustle as hard as you hate?","main":"index.coffee","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"git://github.com/samlambert/hubot-hate.git"},"keywords":["Hubot","Hate"],"author":{"name":"https://twitter.com/isamlambert"},"license":"MIT","bugs":{"url":"https://github.com/samlambert/hubot-hate/issues"},"gitHead":"c66090160774e88f49253d8cc612044bf375042a","homepage":"https://github.com/samlambert/hubot-hate","_id":"hubot-hate@0.0.2","_shasum":"14ad896750c1dd655ceb3f596c471f79fd8dccc0","_from":".","_npmVersion":"2.0.0-beta.0","_npmUser":{"name":"samlambert","email":"sam@github.com"},"maintainers":[{"name":"samlambert","email":"sam@github.com"}],"dist":{"shasum":"14ad896750c1dd655ceb3f596c471f79fd8dccc0","tarball":"http://registry.npmjs.org/hubot-hate/-/hubot-hate-0.0.2.tgz"}}
+58 error new={"name":"hubot-hate","version":"0.0.2","description":"Maybe you should hustle as hard as you hate?","main":"index.coffee","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"git://github.com/samlambert/hubot-hate.git"},"keywords":["Hubot","Hate"],"author":{"name":"https://twitter.com/isamlambert"},"license":"MIT","bugs":{"url":"https://github.com/samlambert/hubot-hate/issues"},"readme":"hubot-hate\u000a==========\u000a\u000aThis script helps quell the hate by asking the age old question: \"Maybe you should hustle as hard as you hate?\"\u000a\u000a## Installation\u000a\u000aAdd **hubot-hate** to your `package.json` file:\u000a\u000a```json\u000a\"dependencies\": {\u000a  \"hubot-hate\": \">= 0.0.1\",\u000a}\u000a```\u000a\u000aAdd **hubot-hate** to your `external-scripts.json`:\u000a\u000a```json\u000a[\"hubot-hate\"]\u000a```\u000a\u000aRun `npm install`\u000a","readmeFilename":"README.md","homepage":"https://github.com/samlambert/hubot-hate","_id":"hubot-hate@0.0.2","_from":"hubot-hate@*","_npmVersion":"2.1.10","_nodeVersion":"0.10.21","_npmUser":{"name":"samlambert","email":"sam@github.com"},"maintainers":[{"name":"samlambert","email":"sam@github.com"}],"dist":{"shasum":"ab0d6d4f6e7548445928830218c46909be443dd9","tarball":"http://registry.npmjs.org/hubot-hate/-/hubot-hate-0.0.2.tgz"}}: hubot-hate
+59 error If you need help, you may report this error at:
+59 error     <http://github.com/npm/npm/issues>
+60 verbose exit [ 1, true ]

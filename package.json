@@ -1,6 +1,6 @@
 {
   "name": "hubot-hate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Maybe you should hustle as hard as you hate?",
   "main": "index.coffee",
   "scripts": {
